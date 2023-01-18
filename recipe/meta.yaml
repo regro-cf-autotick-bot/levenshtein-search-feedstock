@@ -1,5 +1,5 @@
 {% set name = "levenshtein-search" %}
-{% set version = "1.4.5" %}
+{% set version = "1.4.6" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Levenshtein_search-{{ version }}.tar.gz
-  sha256: 4034569cb652b00a928f5417bf312c3935a9fd493759ff116d779c44f2f437e2
+  sha256: 323eb087008ff6ed1fd56c8c0efbedc15ac6fd59966a693556a2f314cd4d02c7
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
